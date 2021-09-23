@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="BAZARSARDAR - Label of faith">
+  <meta name="keywords" content="bazarsardar">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="icon" href="static/img/image.jpg" type="image/icon type">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <style>
+    body {
+      background: #fff;
+    }
+
+    .wrap {
+      color: black;
+      padding-top: 10rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navbar">
+    <div class="block">
+      <div class="links">
+        <div class="logo">
+          <a href="/"><img src="static/img/image.svg" alt=""></a>
+        </div>
+        <ul>
+          <li>
+            <div class="search">
+              <form id="search-box">
+                <i class="fas fa-search"></i>
+                <input type="search" placeholder="Search">
+              </form>
+            </div>
+          </li>
+          <li><a href="/">
+              <div class="homebutton neurobutton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                  class="bi bi-house-door" viewBox="0 0 16 16">
+                  <path
+                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+                </svg>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="orderbutton neurobutton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list-ul"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                </svg>
+              </div>
+            </a></li>
+          <li><a href="cart.html">
+              <div class="cartbutton neurobutton active">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
+                    fill="currentColor" />
+                  <path
+                    d="M10 22C11.1046 22 12 21.1046 12 20C12 18.8954 11.1046 18 10 18C8.89543 18 8 18.8954 8 20C8 21.1046 8.89543 22 10 22Z"
+                    fill="currentColor" />
+                  <path
+                    d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z"
+                    fill="currentColor" />
+                </svg>
+              </div>
+            </a></li>
+          <li><a href="auth/login.html"><img src="static/img/user.png" alt=""></a></li>
+        </ul>
+      </div>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <label for="">Tranding</label>
+        <a href="#">Search Doctors</a>
+        <a href="#">Ask Question</a>
+        <a href="#">Upload Prescription</a>
+
+        <!-- break -->
+
+        <label for="">Services</label>
+        <a href="#">My Orders</a>
+        <a href="#">Request Medicine</a>
+        <a href="#">Medicine Reminder</a>
+        <a href="#">View Doctor Profile</a>
+        <a href="#">Book Video Consultation</a>
+        <a href="#">Book Home Visit</a>
+        <a href="#">Book Clinic Visit</a>
+        <a href="#">Refer & Earn</a>
+      </div>
+      <div id="side_nav" class="side_nav">
+        <ul>
+          <li><span class="fas fa-bars" onclick="openNav()">
+              <p>All</p>
+            </span>
+          </li>
+          <li><a href="#"></a>Prescription</li>
+          <li><a href="#"></a>Wallet</li>
+          <li><a href="#"></a>Refer & Earn</li>
+          <li><a href="#"></a>Health Blog</li>
+          <li><a href="#"></a>Ask Question</li>
+          <li><a href="#"></a>Support</li>
+        </ul>
+      </div>
+  </nav>
+  <div class="wrap cf">
+    <div class="heading cf">
+      <h1>My Cart</h1>
+      <a href="index.html" class="continue">Need More Items</a>
+    </div>
+    <div class="cart">
+      <ul class="cartWrap">
+        <li class="items odd">
+
+          <div class="infoWrap">
+            <div class="cartSection">
+              <img src="static/img/xps-pduutGbL2-M-unsplash.jpg" alt="" class="itemImg" />
+              <p class="itemNumber">#QUE-007544-002</p>
+              <h3>Item Name 1</h3>
+
+              <p> <input type="text" class="qty" value="3" /> x ₹5.00</p>
+
+              <p class="stockStatus"> In Stock</p>
+            </div>
+
+
+            <div class="prodTotal cartSection">
+              <p>₹15.00</p>
+            </div>
+            <div class="cartSection removeWrap">
+              <a href="#" class="remove">x</a>
+            </div>
+          </div>
+        </li>
+        <li class="items even">
+
+          <div class="infoWrap">
+            <div class="cartSection">
+
+              <img src="static/img/xps-pduutGbL2-M-unsplash.jpg" alt="" class="itemImg" />
+              <p class="itemNumber">#QUE-007544-002</p>
+              <h3>Item Name 1</h3>
+
+              <p> <input type="text" class="qty" value="3" /> x ₹5.00</p>
+
+              <p class="stockStatus"> In Stock</p>
+            </div>
+
+
+            <div class="prodTotal cartSection">
+              <p>₹15.00</p>
+            </div>
+            <div class="cartSection removeWrap">
+              <a href="#" class="remove">x</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="items odd">
+          <div class="infoWrap">
+            <div class="cartSection">
+
+              <img src="static/img/xps-pduutGbL2-M-unsplash.jpg" alt="" class="itemImg" />
+              <p class="itemNumber">#QUE-007544-002</p>
+              <h3>Item Name 1</h3>
+
+              <p> <input type="text" class="qty" value="3" /> x ₹5.00</p>
+
+              <p class="stockStatus out"> Out of Stock</p>
+            </div>
+
+
+            <div class="prodTotal cartSection">
+              <p>₹15.00</p>
+            </div>
+            <div class="cartSection removeWrap">
+              <a href="#" class="remove">x</a>
+            </div>
+          </div>
+        </li>
+        <li class="items even">
+          <div class="infoWrap">
+            <div class="cartSection info">
+
+              <img src="static/img/xps-pduutGbL2-M-unsplash.jpg" alt="" class="itemImg" />
+              <p class="itemNumber">#QUE-007544-002</p>
+              <h3>Item Name 1</h3>
+
+              <p> <input type="text" class="qty" value="3" /> x ₹5.00</p>
+
+              <p class="stockStatus"> In Stock</p>
+
+            </div>
+
+
+            <div class="prodTotal cartSection">
+              <p>₹15.00</p>
+            </div>
+
+            <div class="cartSection removeWrap">
+              <a href="#" class="remove">x</a>
+            </div>
+          </div>
+          <div class="special">
+            <div class="specialContent">You grab 5% discount on this product !!</div>
+          </div>
+        </li>
+
+
+      </ul>
+    </div>
+
+    <div class="promoCode"><label for="promo">Have A Promo Code?</label><input type="text" name="promo"
+        placholder="Enter Code" />
+      <a href="#" class="btn"></a>
+    </div>
+
+    <div class="subtotal cf">
+      <ul>
+        <li class="totalRow"><span class="label">Subtotal</span><span class="value">₹60.00</span></li>
+
+        <li class="totalRow"><span class="label">Shipping</span><span class="value">₹25.00</span></li>
+
+        <li class="totalRow"><span class="label">Discount</span><span class="value">₹20.00</span></li>
+        <li class="totalRow final"><span class="label">Total</span><span class="value">₹65.00</span></li>
+        <li class="totalRow"><a href="#" class="btn continue">Checkout</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="static/js/main.js"></script>
+</body>
+
+</html>
